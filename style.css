@@ -1,0 +1,839 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root
+{
+    --box-shadow: 1rem .5rem 2rem rgba(0,0,0,.2);
+    --border: 2rem .5rem 2rem rgba(0,0,0,.2);
+    --outline: .1rem .5rem 2rem rgba(0,0,0,.2);
+    --black:#130f40;
+    --light-color:#666;
+     
+}
+
+*
+{
+    font-family: "Poppins", serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .3s linear;
+}
+
+html
+{
+    font-size:62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top:7rem;
+}
+
+body
+{
+    background: #eee;
+  
+}
+
+.header
+{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background: rgb(191, 226, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+    z-index: 999;
+
+}
+
+.box 
+{
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header .left-icon
+{
+ 
+    width:60rem;
+}
+
+.header .left-icon img
+{
+    width:100%;
+}
+
+.header .invitation
+{
+  
+    width:100rem;
+    font-size: 6rem;
+    text-align: center;
+    color:rgb(3, 56, 87)
+}
+
+.header .right-icons
+{
+    width:40rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+ 
+  
+}
+
+.header .right-icons div
+{
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    width:15rem;
+    height:10rem; 
+    cursor: pointer; 
+    margin-left:4rem;
+}
+
+.header .right-icons img 
+{
+    width:100%;
+}
+
+
+.header .nikah-card 
+{
+    
+    width:100rem;
+    position: absolute;
+    top:35rem;
+    right:-130%;
+    transition:all .4s linear;
+}
+
+.header .nikah-card img
+{
+    width:100%;
+}
+
+
+.nikah-card.active
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right:4rem;
+}
+
+
+
+.header .valima-card 
+{
+   
+    width:100rem;
+    position: absolute;
+    top:35rem;
+    right:-130%;
+    transition:all .4s linear;
+   
+}
+
+.header .valima-card img
+{
+    width:100%;
+}
+
+
+.valima-card.active
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right:4rem;
+}
+
+.bride-container
+{
+    margin-top:40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+
+.bride-container .card
+{
+    width:50rem;
+    height:60rem;
+    border-radius: 50rem;
+    margin-right:3rem;
+    background: url(groom.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+.bride-container .card-info
+{
+    font-size: 4rem;
+    padding:15rem 2rem;
+    width:80rem;
+    height:80rem;
+    border-radius: 5rem;  
+    text-align: center;
+    background:#0ca3a8;
+    outline: 1px solid rgb(236, 229, 229); 
+    outline-offset: -1.5rem;
+}
+
+
+.bride-container .card-info h1
+{
+    font-size: 7rem;
+    margin-bottom: 6rem;
+}
+
+.bride-container .card-info p span
+{
+    color:rgb(252, 255, 252);
+}
+
+
+
+.section
+{
+    border: 1px solid;
+    margin-top:3rem;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #bde5eb;
+    padding-bottom: 3rem;
+}
+
+.section .welcome
+{
+    
+    width: 100%;
+    margin:2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:rem;
+}
+
+.section .welcome p
+{
+    width:100%;
+    text-align: center;
+    outline: 1px solid  rgb(252, 246, 166);
+    outline-offset:-1rem;
+    padding:6rem;
+    border-radius: .9rem;
+    background: #0ca3a8;
+    font-size:4.5rem;
+    font-weight: bolder;
+    color:black;
+}
+
+.section .function-hall
+{
+   width:50%;
+  
+}
+
+.section .function-hall img
+{
+    width:100%;
+    border-radius: 5rem;
+}
+
+.section1 .best-wishes
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    flex-direction: column;
+    margin:5rem auto;
+    background: #0ca3a8;
+    outline: 2px solid yellow;
+    outline-offset: -2rem;
+}
+
+.section1 .best-wishes h2
+{
+    margin:5rem 0;
+    font-size: 10rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.main
+{
+    
+    border:1px solid;
+    border-radius: 10rem;
+    width:30%;
+    height: 600px;
+    box-shadow: var(--box-shadow);
+    margin:auto;
+    margin-bottom: 10rem;
+    position:relative;
+    overflow: hidden;
+}
+
+.slide
+{
+    width:100%;
+    height:100%;
+    position: absolute;
+}
+
+.main img
+{
+    width:100%;
+    border-radius: 10rem;
+   
+}
+
+.nav
+{
+    text-align: center;
+}
+
+.nav button
+{
+    border: 1px solid blue;
+    font-size: 5rem;
+    padding:1rem 5rem;
+    border-radius: 1rem;
+    margin:0 2rem 10rem 0;
+    cursor: pointer;
+}
+
+.nav button:hover
+{
+    color:rgb(255, 255, 255);
+    background: steelblue;
+}
+
+.map-container
+{
+    border:2px solid;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.map-container .left-map
+{
+    width:40%;
+    border: 1px solid red;
+}
+
+.map-container .left-map h2
+{
+    text-align: center;
+    font-size: 3.5rem;
+    margin:2rem 0;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#130f40;
+}
+
+.map-container .left-map .googlemap
+{
+    width:100%;
+}
+
+.map-container .right-map
+{
+    margin-left:2rem;
+    width:40%;
+    border:1px solid red;
+}
+
+.map-container .right-map .googlemap1
+{
+    width:100%;
+}
+
+.map-container .right-map h2
+{
+  
+    text-align: center;
+    font-size: 3.5rem;
+    margin:2rem 0;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#130f40;
+}
+
+
+.footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    margin-bottom: 4rem;
+    background: #0ca3a8;
+}
+
+.footer .left
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.footer .left p
+{
+    text-align: center;
+    font-size: 3.5rem;
+    padding:4rem;
+    color:#f9ffc3;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media query start*/
+
+@media (max-width:1820px)
+{
+
+    html
+    {
+        font-size: 30%;
+    }
+    .header .nikah-card
+    {
+        display: flex;
+        width:100%;
+    }
+    .header .nikah-card img
+    {
+        width:50%;
+    }  
+
+    .nikah-card.active
+    {
+        right:0rem;
+    }
+
+    .header .valima-card
+    {
+        display: flex;
+        width:100%;
+    }
+    .header .valima-card img
+    {
+        width:50%;
+    }  
+
+    .valima-card.active
+    {
+        right:0rem;
+    }
+}
+
+@media (width:1020px)
+{
+    html
+    {
+        font-size: 30%;
+    }
+}
+
+@media(max-width:991px)
+{
+    html
+    {
+     font-size: 30%;
+    }
+    .header .left-icon 
+    {
+        width:30rem;
+    }
+
+    .header .right-icons
+    {
+        width:35rem;
+    }
+
+    .header .right-icons div
+    {
+        width: 10rem;
+        height:auto;
+    }
+
+    .header .nikah-card
+    {
+        display: flex;
+        width:100%;
+    }
+    .header .nikah-card img
+    {
+        width:50%;
+    }  
+
+    .nikah-card.active
+    {
+        right:0rem;
+    }
+
+    .header .valima-card
+    {
+        display: flex;
+        width:100%;
+    }
+    .header .valima-card img
+    {
+        width:50%;
+    }  
+
+    .valima-card.active
+    {
+        right:0rem;
+    }
+
+    
+    .main
+    {
+        width:90%;
+     
+    }
+      
+ }
+
+@media (max-width:768px)
+{
+     html
+    {
+        font-size: 25%;
+    }
+    .header .left-icon 
+    {
+        width:30rem;
+    }
+
+    .header .right-icons
+    {
+        width:35rem;
+    }
+
+    .header .right-icons div
+    {
+        width:8rem;
+        height:auto;
+    }
+
+    
+    .header .nikah-card
+    {
+        display: flex;
+        width:100%;
+    }
+
+    .header .nikah-card img
+    {
+        width:90%;
+    } 
+
+    
+    .nikah-card.active
+    {
+        right:0rem;
+    }
+
+    .header .valima-card
+    {
+        display: flex;
+        width:100%;
+    }
+    .header .valima-card img
+    {
+        width:90%;
+    }  
+
+    .valima-card.active
+    {
+        right:0rem;
+    }
+
+    
+    .main
+    {
+        width:70%;
+     
+    }
+}
+
+@media (max-width:450px)
+{
+  
+    html
+    {
+        font-size: 20%;
+    }
+    .header .left-icon 
+    {
+        width:30rem;
+    }
+
+    .header .right-icons
+    {
+        width:35rem;
+    }
+
+    .header .right-icons div
+    {
+        width:8rem;
+        height:auto;
+    }
+
+    .header .nikah-card
+    {
+        display: flex;
+        width:100%;
+    }
+
+    .header .nikah-card img
+    {
+        width:100%;
+    } 
+
+    
+    .nikah-card.active
+    {
+        right:0rem;
+    }
+
+    .header .valima-card
+    {
+        display: flex;
+        width:100%;
+    }
+    .header .valima-card img
+    {
+        width:100%;
+    }  
+
+    .valima-card.active
+    {
+        right:0rem;
+    }
+
+    .bride-container .card
+    {
+        width:100%;
+        height:80rem;
+    
+    }
+
+    .bride-container .card-info
+    {
+        width:100%;
+    
+    }
+
+
+    .bride-container .card-info h1
+    {
+        font-size: 7rem;
+        margin-bottom: 6rem;
+    }    
+
+  
+    
+        .section .welcome p
+        {
+            width:100%;
+        
+        }
+
+        
+    .main
+    {
+        width:100%;
+     
+    }
+
+        .map-container .left-map
+    {
+        width: 100%;
+    }
+
+    .map-container .right-map
+{
+   width: 100%;
+}
+}
+
+@media (max-width:600px)
+{
+    .bride-container .card
+    {
+        width:100%;
+        height:80rem;
+        margin-bottom: 2rem;
+    
+    }
+
+    .bride-container .card-info
+    {
+        width:100%;
+    
+    }
+
+
+    .bride-container .card-info h1
+    {
+        font-size: 7rem;
+        margin-bottom: 6rem;
+    } 
+
+    .section .function-hall
+    {
+    width:100%;
+    outline:2px solid greenyellow;
+    }
+
+    .section .welcome p
+    {
+        width:100%;
+    
+    }
+
+    .main
+    {
+        width:100%;
+     
+    }
+    
+    .section1 .best-wishes h2
+    {
+    font-size: 5rem;
+    }
+
+    .map-container
+    {
+     flex-direction: column;
+     width:97%;
+   
+    }
+
+     .map-container .left-map
+    {
+        width:100%;
+    }
+
+    .map-container .left-map iframe
+    {
+        width: 100%;
+    }
+
+    .map-container .left-map
+    {
+        width: 100%;
+    }
+
+    .map-container .right-map
+    {
+     margin-left:0;
+     width: 100%;
+    }
+
+    .header
+    {
+        position: fixed;
+    
+    }
+
+    
+.bride-container .card
+{
+    width:100%;
+    height:100rem;
+    border-radius: 5rem;
+    margin-right:3rem;
+    background: url(groom.jpg);
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
